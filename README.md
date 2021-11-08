@@ -15,13 +15,11 @@ def xorOfArray(arr,n,c):
     for i in range(n):
             if c>100:
                 sys.stdout.write(str("-1")+"\n")
-            if x>n:
+            if c>=n:
                 sys.stdout.write(str("-1")+"\n")
             xor_arr = 0
             for i in range(n):
                 xor_arr = xor_arr ^ arr[i]
-            if (xor_arr>arr[n-1] or xor_arr<arr[0]) and xor_arr!=0:
-                x=x+1
             if xor_arr!=0:
                 for i in range(n):
                         arr[i]=arr[i]+1
